@@ -72,4 +72,4 @@ const jwtSignatureBase64 = base64url.toBase64(signatureInBase64uRL)
 const PUB_KEY = fs.readFileSync(__dirname + '/pub_key.pem' , 'utf-8')
 
 const signatureIsValid = verifyFunction.verify(PUB_KEY , jwtSignatureBase64 , 'base64')
-console.log(signatureIsValid)
+console.log(signatureIsValid);
